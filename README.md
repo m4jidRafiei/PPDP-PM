@@ -1,4 +1,4 @@
-# Visual Decision Tree Based on Categorical Attributes 
+# Privacy-Preserving Data Publishing in Process Mining
 -------------------
 
 
