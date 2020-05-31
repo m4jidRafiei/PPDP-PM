@@ -133,7 +133,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 EVENT_LOG_NAME = ':notset:'
 
+ROLE_APPLIED = False
+ROLE_FILE = ''
 
+CONNECTOR_APPLIED = False
+CONNECTOR_FILE = ''
+
+TLKC_APPLIED = False
+TLKC_FILE = ''
 #for uploading large files > 2.5 Mb
 # FILE_UPLOAD_HANDLERS = [
 #     'django.core.files.uploadhandler.TemporaryFileUploadHandler',

@@ -14,6 +14,7 @@ def role_main(request):
     if request.method == 'POST':
 
         if 'applyButton' in request.POST:
+
             event_logs_path = os.path.join(settings.MEDIA_ROOT, "event_logs")
             temp_path = os.path.join(settings.MEDIA_ROOT, "temp")
 
@@ -48,6 +49,9 @@ def role_main(request):
             new_file_name = values['RoleMining_Tech'] + date_time + settings.EVENT_LOG_NAME
             privacy_aware_log_path = os.path.join(temp_path, "role_mining", new_file_name)
 
+            settings.ROLE_FILE = privacy_aware_log_path
+            settings.ROLE_APPLIED = True
+
             pp = privacyPreserving(event_log)
             pp.apply_privacyPreserving(values['RoleMining_Tech'], resource_aware, exportPrivacyAwareLog, show_final_result,
                                        hashedActivities, NoSubstitutions= int(values['fixedValue']), MinMax=MinMax,
@@ -55,6 +59,10 @@ def role_main(request):
                                        # event_attribute2remove=["Activity", "Resource", "Costs"],
                                        # case_attribute2remove=["creator"]
                                         )
+            if os.path.isfile(settings.ROLE_FILE):
+                values['load'] = False
+            else:
+                values['load'] = True
 
             outputs = get_output_list("role_mining")
 
@@ -87,6 +95,9 @@ def role_main(request):
             event_logs_path = os.path.join(settings.MEDIA_ROOT, "event_logs", filename)
             shutil.move(temp_path, event_logs_path)
 
+            if temp_path == settings.ROLE_FILE:
+                settings.ROLE_FILE =""
+
             outputs = get_output_list("role_mining")
 
             values = setValues(request)
@@ -104,6 +115,9 @@ def role_main(request):
             file_dir = os.path.join(temp_path, "role_mining", filename)
             os.remove(file_dir)
 
+            if file_dir == settings.ROLE_FILE:
+                settings.ROLE_FILE =""
+
             outputs = get_output_list("role_mining")
             values = setValues(request)
 
@@ -118,6 +132,12 @@ def role_main(request):
         values['fixedValueFreq'] = 1
         values['resourceAware'] = 'resourceAware'
         values['hashedAct'] = 'hashedAct'
+
+        if not (os.path.isfile(settings.ROLE_FILE)) and settings.ROLE_APPLIED:
+            values['load'] = True
+        else:
+            settings.ROLE_APPLIED = False
+            values['load'] = False
 
 
         outputs = get_output_list("role_mining")

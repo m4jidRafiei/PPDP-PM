@@ -12,7 +12,7 @@
               {% if log_name != ':notset:' %}
                 <p style="color:green;"> {{log_name}} is used as input.</p>
               {% else %}
-                <p style="color:red;"> You have not set any event log as input. Use "Event Logs" to set an event log as input!</p>
+                <p style="color:red;"> You have not set any event log as input. Use "Event Data" tab to set an event log as input!</p>
               {% endif %}
 
               {% if message %}
@@ -26,10 +26,10 @@
                     <label for="time_accuracy" class="col-md-3 col-form-label">Time Accuracy (T)</label>
                     <div class="col-sm-1 col-md-3 col-lg-5">
                        <select class="form-control" name="time_accuracy" id="time_accuracy">
-                           <option>days</option>
-                           <option>hours</option>
-                           <option>minutes</option>
                            <option>seconds</option>
+                           <option>minutes</option>
+                           <option>hours</option>
+                           <option>days</option>
                       </select>
                     </div>
             </div>
@@ -94,19 +94,31 @@
                   <!--</div>-->
               <!--</div>-->
           <!--</div>-->
-
+          <div class="row">
+              <div class="col-sm-10 col-md-10 col-lg-12">
             <div class="form-group row">
-                <label for="sens_att_list" class="col-sm-4 col-form-label">Select Sensitive Attributes:</label>
+                <label for="sens_att_list" class="col-sm-10 col-form-label">Select Sensitive Attributes (left:categorical, right:numerical):</label>
             </div>
-            <div class="form-group">
-                    <select id="sens_att_list" name="sens_att_list" class="custom-select col-md-8" size="4" multiple>
+
+                    <select id="sens_att_list" name="sens_att_list" class="custom-select col-md-5" size="4" multiple>
                          {% for sens in sensitvie %}
                             {% if sens != "@@case_index" and sens != "@@event_index" %}
                               <option value="{{sens}}">{{sens}}</option>
                             {% endif %}
                         {% endfor %}
                     </select>
-            </div>
+
+                   <select id="sens_att_list_cont" name="sens_att_list_cont" class="custom-select col-md-5" size="4" multiple>
+                         {% for sens in sensitvie %}
+                            {% if sens != "@@case_index" and sens != "@@event_index" %}
+                              <option value="{{sens}}">{{sens}}</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+
+
+          </div>
+          </div>
 
             <div class="pt-4">
             <button type="submit" class="btn btn-primary mb-2" id ='applyButton' name="applyButton"> Apply </button>
@@ -131,8 +143,16 @@
                   <input style="float: right; margin-top: 10px;" type = "submit" class="btn btn-info" value = "Download" name= "downloadButton" id ='downloadButton'/>
 
            </div>
+              <div class="spinner-grow text-primary" style="display:none" role="status">
+                        <span class="sr-only">Loading...</span>
+             </div>
           </div>
 
+          {% if values.load %}
+                <script>
+                    $(".spinner-grow").show();
+                </script>
+          {% endif %}
 
         </form>
 
@@ -156,6 +176,7 @@
       {
         alert( "Consider the RED messages in the screen!" );
       }
+      $(".spinner-grow").show();
    });
 
 

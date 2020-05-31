@@ -14,6 +14,7 @@ def connector_main(request):
     if request.method == 'POST':
 
         if 'applyButton' in request.POST:
+
             event_logs_path = os.path.join(settings.MEDIA_ROOT, "event_logs")
             temp_path = os.path.join(settings.MEDIA_ROOT, "temp")
 
@@ -41,6 +42,8 @@ def connector_main(request):
             new_file_name = "connector" + date_time + settings.EVENT_LOG_NAME[:-3] +"xml"
             pma_path = os.path.join(temp_path, "connector", new_file_name)
 
+            settings.CONNECTOR_FILE = pma_path
+            settings.CONNECTOR_APPLIED = True
 
             if 'relationDepth' in values:
                 relationDepth = True
@@ -54,6 +57,11 @@ def connector_main(request):
 
             pp = privacyPreserving(event_log)
             pp.apply_privacyPreserving(values['enkey'],pma_path, pma_method, pma_desired_analyses, event_log, relation_depth = relationDepth, trace_length = traceLength, trace_id = traceId)
+
+            if os.path.isfile(settings.CONNECTOR_FILE):
+                values['load'] = False
+            else:
+                values['load'] = True
 
             outputs.append(new_file_name)
 
@@ -87,6 +95,9 @@ def connector_main(request):
             file_dir = os.path.join(temp_path, "connector", filename)
             os.remove(file_dir)
 
+            if file_dir == settings.CONNECTOR_FILE:
+                settings.CONNECTOR_FILE =""
+
             outputs = get_output_list("connector")
             values = setValues(request)
 
@@ -104,6 +115,9 @@ def connector_main(request):
             n_event_logs_path = os.path.join(settings.MEDIA_ROOT, "none_event_logs", filename)
             shutil.move(temp_path, n_event_logs_path)
 
+            if temp_path == settings.CONNECTOR_FILE:
+                settings.CONNECTOR_FILE = ""
+
             outputs = get_output_list("connector")
 
             values = setValues(request)
@@ -116,6 +130,12 @@ def connector_main(request):
         values['traceLength'] = 'traceLength'
         values['traceId'] = 'traceId'
         values['enkey'] = 'DEFPASSWORD12!!!'
+
+        if not (os.path.isfile(settings.CONNECTOR_FILE)) and settings.CONNECTOR_APPLIED:
+            values['load'] = True
+        else:
+            settings.CONNECTOR_APPLIED = False
+            values['load'] = False
 
         outputs = get_output_list("connector")
 

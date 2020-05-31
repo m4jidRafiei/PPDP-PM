@@ -12,11 +12,13 @@ from pm4py.objects.log.importer.xes import factory as xes_importer_factory
 
 
 def tlkc_main(request):
+
     if request.method == 'POST':
         event_logs_path = os.path.join(settings.MEDIA_ROOT, "event_logs")
         event_log_name = os.path.join(event_logs_path, settings.EVENT_LOG_NAME)
 
         if 'applyButton' in request.POST:
+
             temp_path = os.path.join(settings.MEDIA_ROOT, "temp")
 
             if settings.EVENT_LOG_NAME == ':notset:':
@@ -24,14 +26,17 @@ def tlkc_main(request):
 
             values = setValues(request)
 
-            if len(values['sens_att_list']) == 0 and float(values['confidence_bound']) !=1:
+            xes_log = xes_importer_factory.apply(event_log_name)
+            sensitives = get_attributes(xes_log)
+
+
+            if len(values['sens_att_list']) == 0 and len(values['sens_att_list_cont']) == 0 and float(values['confidence_bound']) !=1:
                 outputs = get_output_list("TLKC")
                 msg_text = 'A sensitive attribute have to be selected when confidence bounding is less than 1!'
                 return render(request, 'tlkc_main.html',
-                              {'log_name': settings.EVENT_LOG_NAME, 'values': values, 'outputs': outputs, 'sensitive':  values['sens_att_list'],
-                               'message': msg_text})
-
-            privacy_aware_log_path = os.path.join(temp_path, "TLKC")
+                              {'log_name': settings.EVENT_LOG_NAME, 'values': values, 'outputs': outputs,
+                               'sensitvie': sensitives, 'message': msg_text})
+            privacy_aware_log_dir = os.path.join(temp_path, "TLKC")
 
             L = []
             C = []
@@ -48,13 +53,28 @@ def tlkc_main(request):
             K2.append(float(values['frq_threshold']))
 
             cont =[]
-            pp = privacyPreserving(event_log_name, settings.EVENT_LOG_NAME[:-4])
-            pp.apply(T, L, K, C, K2, values['sens_att_list'], cont, values['bk_type'],privacy_aware_log_path )
+            log_name = settings.EVENT_LOG_NAME[:-4]
+            #Only for consistency!
+            now = datetime.now()
+            date_time = now.strftime(" %m-%d-%y %H-%M-%S ")
+            fixed_name = "TLKC" + date_time + log_name + " "
+            privacy_aware_log_path = os.path.join(fixed_name + values['bk_type'] + "_" + str(L[0]) + "_" + str(
+                                                      K[0]) + "_" + str(
+                                                      C[0]) + "_" + str(K2[0]) + "_" + T[0] + ".xes")
+
+            settings.TLKC_FILE = os.path.join(privacy_aware_log_dir,privacy_aware_log_path)
+            settings.TLKC_APPLIED = True
+
+            pp = privacyPreserving(event_log_name, log_name)
+            pp.apply(T, L, K, C, K2, values['sens_att_list'], values['sens_att_list_cont'], values['bk_type'],privacy_aware_log_dir, privacy_aware_log_path)
+
+            print(settings.TLKC_FILE)
+            if os.path.isfile(settings.TLKC_FILE):
+                values['load'] = False
+            else:
+                values['load'] = True
 
             outputs = get_output_list("TLKC")
-
-            xes_log = xes_importer_factory.apply(event_log_name)
-            sensitives = get_attributes(xes_log)
 
             return render(request, 'tlkc_main.html',
                           {'log_name': settings.EVENT_LOG_NAME, 'values': values, 'outputs': outputs,
@@ -87,6 +107,9 @@ def tlkc_main(request):
             event_name = os.path.join(settings.MEDIA_ROOT, "event_logs", filename)
             shutil.move(temp_name, event_name)
 
+            if temp_name == settings.TLKC_FILE:
+                settings.TLKC_FILE = ""
+
             outputs = get_output_list("TLKC")
 
             values = setValues(request)
@@ -114,6 +137,9 @@ def tlkc_main(request):
 
             os.remove(file_dir)
 
+            if file_dir == settings.TLKC_FILE:
+                settings.TLKC_FILE =""
+
             outputs = get_output_list("TLKC")
             values = setValues(request)
 
@@ -126,12 +152,18 @@ def tlkc_main(request):
 
         values = {}
         values['bk_power'] = 2
-        values['k_anonymity'] = 10
+        values['k_anonymity'] = 2
         values['confidence_bound'] = 0.5
         values['frq_threshold'] = 0.5
 
         outputs = get_output_list("TLKC")
         sensitives = []
+
+        if not (os.path.isfile(settings.TLKC_FILE)) and settings.TLKC_APPLIED:
+            values['load'] = True
+        else:
+            settings.TLKC_APPLIED = False
+            values['load'] = False
 
         if settings.EVENT_LOG_NAME != ':notset:':
             event_logs_path = os.path.join(settings.MEDIA_ROOT, "event_logs")
@@ -151,10 +183,9 @@ def setValues(request):
     values['k_anonymity'] = request.POST['k_anonymity']
     values['confidence_bound'] = request.POST['confidence_bound']
     values['frq_threshold'] = request.POST['frq_threshold']
-    if 'sens_att_list' in request.POST:
-        values['sens_att_list'] = request.POST.getlist('sens_att_list')
-    else:
-        values['sens_att_list'] = []
+    values['sens_att_list'] = request.POST.getlist('sens_att_list')
+    values['sens_att_list_cont'] = request.POST.getlist('sens_att_list_cont')
+
     return values
 
 
@@ -181,6 +212,7 @@ def get_attributes(xes_log):
                     event_attribs.append(key)
 
     sensitives = case_attribs + event_attribs
+    sensitives.sort()
     # sensitives = case_attribs
     print("in function")
     print(sensitives)

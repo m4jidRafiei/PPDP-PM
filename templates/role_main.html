@@ -17,7 +17,7 @@
               {% if log_name != ':notset:' %}
                 <p style="color:green;"> {{log_name}} is used as input.</p>
               {% else %}
-                <p style="color:red;"> You have not set any event log as input. Use "Event Logs" to set an event log as input!</p>
+                <p style="color:red;"> You have not set any event log as input. Use "Event Data" tab to set an event log as input!</p>
               {% endif %}
 
             {% csrf_token %}
@@ -114,12 +114,17 @@
                             {% endfor %}
                   </select>
 
+
                   <input style="margin-top: 10px;" data-toggle="tooltip" data-placement="top" title="Add to the event logs" type = "submit" class="btn btn-success" value = "Add" name= "addButton" id ='addButton' />
                   <input style="margin-top: 10px;" type = "submit" class="btn btn-danger" value = "Delete" name= "deleteButton" id ='deleteButton'/>
                   <input style="float: right; margin-top: 10px;" type = "submit" class="btn btn-info" value = "Download" name= "downloadButton" id ='downloadButton'/>
 
 
            </div>
+
+             <div class="spinner-grow text-primary" style="display:none" role="status">
+                        <span class="sr-only">Loading...</span>
+             </div>
           </div>
 
 
@@ -152,6 +157,11 @@
 
             {% endif %}
 
+            {% if values.load %}
+                <script>
+                    $(".spinner-grow").show();
+                </script>
+            {% endif %}
 
         </form>
 
@@ -175,6 +185,7 @@
       {
         alert( "Consider the RED messages in the screen!" );
       }
+      $(".spinner-grow").show();
     });
 
    <!--function LoadELResult() {-->
