@@ -97,6 +97,7 @@ def role_main(request):
 
             if temp_path == settings.ROLE_FILE:
                 settings.ROLE_FILE =""
+                settings.ROLE_APPLIED = False
 
             outputs = get_output_list("role_mining")
 
@@ -117,6 +118,7 @@ def role_main(request):
 
             if file_dir == settings.ROLE_FILE:
                 settings.ROLE_FILE =""
+                settings.ROLE_APPLIED = False
 
             outputs = get_output_list("role_mining")
             values = setValues(request)

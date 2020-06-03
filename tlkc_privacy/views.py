@@ -109,6 +109,7 @@ def tlkc_main(request):
 
             if temp_name == settings.TLKC_FILE:
                 settings.TLKC_FILE = ""
+                settings.TLKC_APPLIED = False
 
             outputs = get_output_list("TLKC")
 
@@ -139,6 +140,7 @@ def tlkc_main(request):
 
             if file_dir == settings.TLKC_FILE:
                 settings.TLKC_FILE =""
+                settings.TLKC_APPLIED = False
 
             outputs = get_output_list("TLKC")
             values = setValues(request)

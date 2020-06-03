@@ -97,6 +97,7 @@ def connector_main(request):
 
             if file_dir == settings.CONNECTOR_FILE:
                 settings.CONNECTOR_FILE =""
+                settings.CONNECTOR_APPLIED = False
 
             outputs = get_output_list("connector")
             values = setValues(request)
@@ -117,6 +118,7 @@ def connector_main(request):
 
             if temp_path == settings.CONNECTOR_FILE:
                 settings.CONNECTOR_FILE = ""
+                settings.CONNECTOR_APPLIED = False
 
             outputs = get_output_list("connector")
 
