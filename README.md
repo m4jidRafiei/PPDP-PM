@@ -35,4 +35,21 @@ Note that for using docker commands, first you nened to [install Docker](https:/
 After running the docker, use your browser and enter the following address to run the web-based application:
 <http://127.0.0.1:8000/> 
 
+## Other Integrations
+The introduced privacy preservation techniques have also been integrated into [PM4Py-WS (PMTK)](https://github.com/m4jidRafiei/pm4py-ws) as an open-source web-based
+application for process mining. Where process mining algorithms can directly be applied to the privacy-aware event logs. Use the following docker commands to run this application:
+
+```shell
+docker pull m4jid/pm4pyws:privacyIntegration
+docker run -d -p 5000:80 m4jid/pm4pyws:privacyIntegration
+```
+After running the docker, use your browser and enter the following address to run the web-based application:
+<http://127.0.0.1:5000/index.html> 
+
+ ```shell
+Credential
+---------------
+User: admin
+Pass: admin
+```
 
