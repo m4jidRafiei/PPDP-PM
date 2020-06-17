@@ -21,7 +21,7 @@ At the moment, the application has four main modules:
 * A naming approach is followed to uniquely identify the privacy-aware event data based on name of the technique, the creation time, and name of the event log.    
 
 ### Screencast
-In [this](https://github.com/m4jidRafiei/PPDP-PM/blob/master/PPDPinPM.mp4) video, you can watch a screencast of the tool which demonstrates the main functionalities of our Python-based infrastructure for privacy preservation in process mining.
+In [this](https://github.com/m4jidRafiei/PPDP-PM/blob/master/PPDPinPM.mp4) video, you can watch a screencast of the tool which demonstrates the main functionalities of our Python-based infrastructure for privacy preservation in process mining. Note that you may need to download the file to watch.
 
 ### Requirements
 The application is OS-independent, and you only need to install Django and Python packages specified in the [requirements](https://github.com/m4jidRafiei/PPDP-PM/blob/master/requirements.txt) file.
