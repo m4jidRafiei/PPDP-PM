@@ -39,7 +39,7 @@ After running the docker, use your browser and enter the following address to ru
 <http://127.0.0.1:8000/> 
 
 ## Other Integrations
-The introduced privacy preservation techniques have also been integrated into [PM4Py-WS (PMTK)](https://github.com/m4jidRafiei/pm4py-ws) as an open-source web-based
+The introduced privacy preservation techniques have also been integrated into [PM4Py-WS (PMTK)](https://github.com/m4jidRafiei/pm4py-ws/tree/privacyIntegration) as an open-source web-based
 application for process mining. Where process mining algorithms can directly be applied to the privacy-aware event logs. Use the following docker commands to run this application:
 
 ```shell
