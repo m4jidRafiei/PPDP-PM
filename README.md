@@ -20,6 +20,9 @@ At the moment, the application has four main modules:
 * To keep the process analysts aware of the modifications applied to the privacy-aware event logs, the _privacy metadata_ specify the order of the applied privacy preservation techniques. 
 * A naming approach is followed to uniquely identify the privacy-aware event data based on name of the technique, the creation time, and name of the event log.    
 
+### Screencast
+In [this](https://github.com/m4jidRafiei/PPDP-PM/blob/master/PPDPinPM.mp4) video, you can watch a screencast of the tool which demonstrates the main functionalities of our Python-based infrastructure for privacy preservation in process mining.
+
 ### Requirements
 The application is OS-independent, and you only need to install Django and Python packages specified in the [requirements](https://github.com/m4jidRafiei/PPDP-PM/blob/master/requirements.txt) file.
 
@@ -30,7 +33,7 @@ To simplify the usage, and to run the appication without going throgh the instal
 docker pull m4jid/ppdp-pm
 docker run -d -p 8000:8000 m4jid/ppdp-pm
 ``` 
-Note that for using docker commands, first you nened to [install Docker](https://docs.docker.com/get-docker/) accourding to your operation system.
+Note that for using docker commands, first you need to [install Docker](https://docs.docker.com/get-docker/) accourding to your operation system.
 
 After running the docker, use your browser and enter the following address to run the web-based application:
 <http://127.0.0.1:8000/> 
