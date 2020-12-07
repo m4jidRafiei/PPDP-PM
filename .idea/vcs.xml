@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../PPDP-AnonOps" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Social_Network" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../TLKC-Privacy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../TLKC-Privacy-Ext" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../privacyAware-ConnectorMethod_DFG" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../privacy_metadata" vcs="Git" />
+  </component>
+</project>

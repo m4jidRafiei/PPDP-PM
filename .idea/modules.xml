@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../PPDP-AnonOps/.idea/PPDP-AnonOps.iml" filepath="$PROJECT_DIR$/../PPDP-AnonOps/.idea/PPDP-AnonOps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../PyCharm/Projects/PP_CEDP/.idea/PP_CEDP.iml" filepath="$PROJECT_DIR$/../../PyCharm/Projects/PP_CEDP/.idea/PP_CEDP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../privacyAware-ConnectorMethod_DFG/.idea/PrivacyAware_Connector_DFG.iml" filepath="$PROJECT_DIR$/../privacyAware-ConnectorMethod_DFG/.idea/PrivacyAware_Connector_DFG.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TLKC-Privacy/.idea/PythonCode.iml" filepath="$PROJECT_DIR$/../TLKC-Privacy/.idea/PythonCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Social_Network/.idea/SocialNetwork.iml" filepath="$PROJECT_DIR$/../Social_Network/.idea/SocialNetwork.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../TLKC-Privacy-Ext/.idea/TLKC-Privacy-Ext.iml" filepath="$PROJECT_DIR$/../TLKC-Privacy-Ext/.idea/TLKC-Privacy-Ext.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/privacy_django.iml" filepath="$PROJECT_DIR$/.idea/privacy_django.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../privacy_metadata/.idea/privacy_metadata.iml" filepath="$PROJECT_DIR$/../privacy_metadata/.idea/privacy_metadata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../privacy_quantification/.idea/privacy_quatification.iml" filepath="$PROJECT_DIR$/../privacy_quantification/.idea/privacy_quatification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../PyCharm/Projects/test/.idea/test.iml" filepath="$PROJECT_DIR$/../../PyCharm/Projects/test/.idea/test.iml" />
     </modules>
   </component>
 </project>

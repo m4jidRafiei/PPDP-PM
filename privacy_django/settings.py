@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'role_mining.apps.RoleMiningConfig',
     'connector.apps.ConnectorConfig',
     'tlkc_privacy.apps.TlkcPrivacyConfig',
+    'tlkc_privacy_ext.apps.TlkcPrivacyExtConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -141,6 +142,10 @@ CONNECTOR_FILE = ''
 
 TLKC_APPLIED = False
 TLKC_FILE = ''
+
+TLKC_EXT_APPLIED = False
+TLKC_EXT_FILE = ''
+
 #for uploading large files > 2.5 Mb
 # FILE_UPLOAD_HANDLERS = [
 #     'django.core.files.uploadhandler.TemporaryFileUploadHandler',

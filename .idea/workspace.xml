@@ -1,6 +1,429 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:pip" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd0398b0-c66c-4480-9be8-7dde6354bbde" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PPDP-AnonOps/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../PPDP-AnonOps/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/privacy_django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/privacy_django.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privacy_django/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/privacy_django/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privacy_django/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/privacy_django/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tlkc_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tlkc_main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/upload.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tlkc_privacy/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tlkc_privacy/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TLKC-Privacy/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../TLKC-Privacy/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TLKC-Privacy/xes_results/Sepsis Cases - Event Log - anon.xes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../privacy_metadata/.idea/privacy_metadata.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../privacy_metadata/.idea/privacy_metadata.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../privacy_quantification/main_risk.py" beforeDir="false" afterPath="$PROJECT_DIR$/../privacy_quantification/main_risk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../privacy_quantification/main_utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/../privacy_quantification/main_utility.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../privacy_quantification/p_privacy_qt/SMS.py" beforeDir="false" afterPath="$PROJECT_DIR$/../privacy_quantification/p_privacy_qt/SMS.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../privacy_quantification" />
+  </component>
+  <component name="ProjectId" id="1gdC5eKZe6TatKLvYNqsicA3TX6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PPDP-AnonOps/ppdp_anonops/tests/resources" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\PPDP-AnonOps\ppdp_anonops\tests\resources" />
+      <recent name="D:\GitHub\PPDP-PM\templates" />
+      <recent name="D:\GitHub\PPDP-PM\tlkc_privacy_ext" />
+      <recent name="D:\GitHub\privacy_quantification" />
+      <recent name="D:\GitHub\privacy_quantification\p_privacy_qt" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\privacy_quantification\p_privacy_qt" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main_utility">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TLKC-Privacy-Ext" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../TLKC-Privacy-Ext" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../TLKC-Privacy-Ext/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main_handover" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SocialNetwork" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../PyCharm/Projects/SocialNetwork" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="D:\PyCharm\Projects\SocialNetwork\main_handover.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main_utility" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="privacy_quatification" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../privacy_quantification" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../privacy_quantification/main_utility.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PPDP-AnonOps" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../PPDP-AnonOps/ppdp_anonops/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../PPDP-AnonOps/ppdp_anonops/tests/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in test_addition.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="PPDP-AnonOps" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../PPDP-AnonOps/ppdp_anonops/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/../PPDP-AnonOps/ppdp_anonops/tests/test_addition.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.main_handover" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python tests.Unittests in test_addition.py" />
+      <item itemvalue="Python.main_utility" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main_utility" />
+        <item itemvalue="Python tests.Unittests in test_addition.py" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.main_handover" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd0398b0-c66c-4480-9be8-7dde6354bbde" name="Default Changelist" comment="" />
+      <created>1598434900842</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598434900842</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="146" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605539672684">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="97" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.690@0.0.1280.690" timestamp="1605352471446" />
+    <state x="146" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1605539672684" />
+    <state x="671" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599485311017">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="671" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050/-1920.6.1920.1050@0.0.1920.1050" timestamp="1599485311017" />
+    <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606919916203">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="640" y="260" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1606919916203" />
+    <state x="460" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605359202964">
+      <screen x="0" y="0" width="1280" height="690" />
+    </state>
+    <state x="460" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.690@0.0.1280.690" timestamp="1605359202964" />
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1603809976563" />
+    <state x="741" y="431" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog" timestamp="1605105588559">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="741" y="431" key="#com.jetbrains.python.refactoring.move.PyMakeFunctionTopLevelDialog/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1605105588559" />
+    <state x="746" y="217" width="495" height="585" key="#xdebugger.evaluate" timestamp="1607357868453">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="25" y="89" width="495" height="585" key="#xdebugger.evaluate/0.0.1280.690@0.0.1280.690" timestamp="1604265515645" />
+    <state x="2" y="276" width="1097" height="595" key="#xdebugger.evaluate/0.0.1920.1050/-1920.6.1920.1050@-1920.6.1920.1050" timestamp="1599670852742" />
+    <state x="-920" y="268" key="#xdebugger.evaluate/0.0.1920.1050/-1920.6.1920.1050@0.0.1920.1050" timestamp="1599493523187" />
+    <state x="633" y="115" width="490" height="654" key="#xdebugger.evaluate/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1605890913311" />
+    <state x="746" y="217" key="#xdebugger.evaluate/0.0.1920.1050/1920.6.1920.1050@1920.6.1920.1050" timestamp="1607357868453" />
+    <state width="1505" height="466" key="DebuggerActiveHint" timestamp="1607357914067">
+      <screen x="1920" y="6" width="1920" height="1050" />
+    </state>
+    <state width="1004" height="307" key="DebuggerActiveHint/0.0.1280.690@0.0.1280.690" timestamp="1605473455799" />
+    <state width="1505" height="466" key="DebuggerActiveHint/0.0.1920.1050/-1920.6.1920.1050@-1920.6.1920.1050" timestamp="1599670921359" />
+    <state width="1505" height="466" key="DebuggerActiveHint/0.0.1920.1050/-1920.6.1920.1050@0.0.1920.1050" timestamp="1599556629049" />
+    <state width="1505" height="466" key="DebuggerActiveHint/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1605262060654" />
+    <state width="1505" height="466" key="DebuggerActiveHint/0.0.1920.1050/1920.6.1920.1050@1920.6.1920.1050" timestamp="1607357914067" />
+    <state x="2660" y="285" key="FileChooserDialogImpl" timestamp="1607336155252">
+      <screen x="1920" y="6" width="1920" height="1050" />
+    </state>
+    <state x="493" y="174" key="FileChooserDialogImpl/0.0.1280.690@0.0.1280.690" timestamp="1604872592939" />
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/-1920.6.1920.1050@0.0.1920.1050" timestamp="1599483368201" />
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1606750503660" />
+    <state x="2660" y="285" key="FileChooserDialogImpl/0.0.1920.1050/1920.6.1920.1050@1920.6.1920.1050" timestamp="1607336155252" />
+    <state width="1899" height="284" key="GridCell.Tab.0.bottom" timestamp="1607361740601">
+      <screen x="1920" y="6" width="1920" height="1050" />
+    </state>
+    <state width="1259" height="164" key="GridCell.Tab.0.bottom/0.0.1280.690@0.0.1280.690" timestamp="1605477091109" />
+    <state width="1899" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.6.1920.1050@-1920.6.1920.1050" timestamp="1599671030502" />
+    <state width="1899" height="352" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.6.1920.1050@0.0.1920.1050" timestamp="1599581344245" />
+    <state width="1899" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1606938562097" />
+    <state width="1899" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.6.1920.1050@1920.6.1920.1050" timestamp="1607361740601" />
+    <state width="1899" height="284" key="GridCell.Tab.0.center" timestamp="1607361740601">
+      <screen x="1920" y="6" width="1920" height="1050" />
+    </state>
+    <state width="1259" height="164" key="GridCell.Tab.0.center/0.0.1280.690@0.0.1280.690" timestamp="1605477091109" />
+    <state width="1899" height="352" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.6.1920.1050@-1920.6.1920.1050" timestamp="1599671030502" />
+    <state width="1899" height="352" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.6.1920.1050@0.0.1920.1050" timestamp="1599581344245" />
+    <state width="1899" height="281" key="GridCell.Tab.0.center/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1606938562096" />
+    <state width="1899" height="284" key="GridCell.Tab.0.center/0.0.1920.1050/1920.6.1920.1050@1920.6.1920.1050" timestamp="1607361740601" />
+    <state width="1899" height="284" key="GridCell.Tab.0.left" timestamp="1607361740601">
+      <screen x="1920" y="6" width="1920" height="1050" />
+    </state>
+    <state width="1259" height="164" key="GridCell.Tab.0.left/0.0.1280.690@0.0.1280.690" timestamp="1605477091109" />
+    <state width="1899" height="352" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.6.1920.1050@-1920.6.1920.1050" timestamp="1599671030501" />
+    <state width="1899" height="352" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.6.1920.1050@0.0.1920.1050" timestamp="1599581344244" />
+    <state width="1899" height="281" key="GridCell.Tab.0.left/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1606938562096" />
+    <state width="1899" height="284" key="GridCell.Tab.0.left/0.0.1920.1050/1920.6.1920.1050@1920.6.1920.1050" timestamp="1607361740601" />
+    <state width="1899" height="284" key="GridCell.Tab.0.right" timestamp="1607361740601">
+      <screen x="1920" y="6" width="1920" height="1050" />
+    </state>
+    <state width="1259" height="164" key="GridCell.Tab.0.right/0.0.1280.690@0.0.1280.690" timestamp="1605477091109" />
+    <state width="1899" height="352" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.6.1920.1050@-1920.6.1920.1050" timestamp="1599671030502" />
+    <state width="1899" height="352" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.6.1920.1050@0.0.1920.1050" timestamp="1599581344245" />
+    <state width="1899" height="281" key="GridCell.Tab.0.right/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1606938562097" />
+    <state width="1899" height="284" key="GridCell.Tab.0.right/0.0.1920.1050/1920.6.1920.1050@1920.6.1920.1050" timestamp="1607361740601" />
+    <state width="1899" height="284" key="GridCell.Tab.1.bottom" timestamp="1607361740601">
+      <screen x="1920" y="6" width="1920" height="1050" />
+    </state>
+    <state width="1259" height="166" key="GridCell.Tab.1.bottom/0.0.1280.690@0.0.1280.690" timestamp="1605475048258" />
+    <state width="1899" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050/-1920.6.1920.1050@-1920.6.1920.1050" timestamp="1599671030503" />
+    <state width="1899" height="352" key="GridCell.Tab.1.bottom/0.0.1920.1050/-1920.6.1920.1050@0.0.1920.1050" timestamp="1599581344245" />
+    <state width="1899" height="284" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1606919932643" />
+    <state width="1899" height="284" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.6.1920.1050@1920.6.1920.1050" timestamp="1607361740601" />
+    <state width="1899" height="284" key="GridCell.Tab.1.center" timestamp="1607361740601">
+      <screen x="1920" y="6" width="1920" height="1050" />
+    </state>
+    <state width="1259" height="166" key="GridCell.Tab.1.center/0.0.1280.690@0.0.1280.690" timestamp="1605475048258" />
+    <state width="1899" height="352" key="GridCell.Tab.1.center/0.0.1920.1050/-1920.6.1920.1050@-1920.6.1920.1050" timestamp="1599671030503" />
+    <state width="1899" height="352" key="GridCell.Tab.1.center/0.0.1920.1050/-1920.6.1920.1050@0.0.1920.1050" timestamp="1599581344245" />
+    <state width="1899" height="284" key="GridCell.Tab.1.center/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1606919932642" />
+    <state width="1899" height="284" key="GridCell.Tab.1.center/0.0.1920.1050/1920.6.1920.1050@1920.6.1920.1050" timestamp="1607361740601" />
+    <state width="1899" height="284" key="GridCell.Tab.1.left" timestamp="1607361740601">
+      <screen x="1920" y="6" width="1920" height="1050" />
+    </state>
+    <state width="1259" height="166" key="GridCell.Tab.1.left/0.0.1280.690@0.0.1280.690" timestamp="1605475048258" />
+    <state width="1899" height="352" key="GridCell.Tab.1.left/0.0.1920.1050/-1920.6.1920.1050@-1920.6.1920.1050" timestamp="1599671030503" />
+    <state width="1899" height="352" key="GridCell.Tab.1.left/0.0.1920.1050/-1920.6.1920.1050@0.0.1920.1050" timestamp="1599581344245" />
+    <state width="1899" height="284" key="GridCell.Tab.1.left/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1606919932642" />
+    <state width="1899" height="284" key="GridCell.Tab.1.left/0.0.1920.1050/1920.6.1920.1050@1920.6.1920.1050" timestamp="1607361740601" />
+    <state width="1899" height="284" key="GridCell.Tab.1.right" timestamp="1607361740601">
+      <screen x="1920" y="6" width="1920" height="1050" />
+    </state>
+    <state width="1259" height="166" key="GridCell.Tab.1.right/0.0.1280.690@0.0.1280.690" timestamp="1605475048258" />
+    <state width="1899" height="352" key="GridCell.Tab.1.right/0.0.1920.1050/-1920.6.1920.1050@-1920.6.1920.1050" timestamp="1599671030503" />
+    <state width="1899" height="352" key="GridCell.Tab.1.right/0.0.1920.1050/-1920.6.1920.1050@0.0.1920.1050" timestamp="1599581344245" />
+    <state width="1899" height="284" key="GridCell.Tab.1.right/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1606919932642" />
+    <state width="1899" height="284" key="GridCell.Tab.1.right/0.0.1920.1050/1920.6.1920.1050@1920.6.1920.1050" timestamp="1607361740601" />
+    <state x="2381" y="175" key="SettingsEditor" timestamp="1607337851867">
+      <screen x="1920" y="6" width="1920" height="1050" />
+    </state>
+    <state x="301" y="0" key="SettingsEditor/0.0.1280.690@0.0.1280.690" timestamp="1603829672088" />
+    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050/-1920.6.1920.1050@0.0.1920.1050" timestamp="1599481705670" />
+    <state x="461" y="169" key="SettingsEditor/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1606740454475" />
+    <state x="2381" y="175" key="SettingsEditor/0.0.1920.1050/1920.6.1920.1050@1920.6.1920.1050" timestamp="1607337851867" />
+    <state width="968" height="533" key="XDebugger.FullValuePopup" timestamp="1607357602892">
+      <screen x="1920" y="6" width="1920" height="1050" />
+    </state>
+    <state width="646" height="351" key="XDebugger.FullValuePopup/0.0.1280.690@0.0.1280.690" timestamp="1603830017298" />
+    <state width="968" height="533" key="XDebugger.FullValuePopup/0.0.1920.1050/-1920.6.1920.1050@0.0.1920.1050" timestamp="1599493313743" />
+    <state width="968" height="533" key="XDebugger.FullValuePopup/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1605102162883" />
+    <state width="968" height="533" key="XDebugger.FullValuePopup/0.0.1920.1050/1920.6.1920.1050@1920.6.1920.1050" timestamp="1607357602892" />
+    <state x="666" y="124" width="587" height="801" key="find.popup" timestamp="1605707793783">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="666" y="124" width="587" height="801" key="find.popup/0.0.1920.1050/1920.6.1920.1050@0.0.1920.1050" timestamp="1605707793783" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../TLKC-Privacy/p_tlkc_privacy/Anonymizer.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../TLKC-Privacy/p_tlkc_privacy/Anonymizer.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../TLKC-Privacy/p_tlkc_privacy/Anonymizer.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../privacy_metadata/main.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../privacy_quantification/p_privacy_qt/EMD.py</url>
+          <line>66</line>
+          <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../PyCharm/Projects/SocialNetwork/main_realHandover.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../PyCharm/Projects/SocialNetwork/Utilities.py</url>
+          <line>163</line>
+          <option name="timeStamp" value="296" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../TLKC-Privacy-Ext/p_tlkc_privacy_ext/Anonymizer.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="297" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../PPDP-AnonOps/ppdp_anonops/condensation.py</url>
+          <line>136</line>
+          <option name="timeStamp" value="298" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../PPDP-AnonOps/ppdp_anonops/condensation.py</url>
+          <line>138</line>
+          <option name="timeStamp" value="299" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

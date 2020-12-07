@@ -215,7 +215,4 @@ def get_attributes(xes_log):
 
     sensitives = case_attribs + event_attribs
     sensitives.sort()
-    # sensitives = case_attribs
-    print("in function")
-    print(sensitives)
     return sensitives
