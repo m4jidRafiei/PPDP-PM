@@ -7,4 +7,4 @@ RUN apt-get -y upgrade
 RUN apt -y install graphviz xdg-utils
 RUN pip install -U -r /requirements.txt
 
-ENTRYPOINT ["python3", "manage.py","runserver","0.0.0.0:8000"]
+ENTRYPOINT ["python", "manage.py","runserver","0.0.0.0:8000"]
