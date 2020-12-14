@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../PPDP-AnonOps/.idea/PPDP-AnonOps.iml" filepath="$PROJECT_DIR$/../PPDP-AnonOps/.idea/PPDP-AnonOps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PPDP-PM-New/.idea/PPDP-PM-New.iml" filepath="$PROJECT_DIR$/../PPDP-PM-New/.idea/PPDP-PM-New.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../PyCharm/Projects/PP_CEDP/.idea/PP_CEDP.iml" filepath="$PROJECT_DIR$/../../PyCharm/Projects/PP_CEDP/.idea/PP_CEDP.iml" />
       <module fileurl="file://$PROJECT_DIR$/../privacyAware-ConnectorMethod_DFG/.idea/PrivacyAware_Connector_DFG.iml" filepath="$PROJECT_DIR$/../privacyAware-ConnectorMethod_DFG/.idea/PrivacyAware_Connector_DFG.iml" />
       <module fileurl="file://$PROJECT_DIR$/../TLKC-Privacy/.idea/PythonCode.iml" filepath="$PROJECT_DIR$/../TLKC-Privacy/.idea/PythonCode.iml" />

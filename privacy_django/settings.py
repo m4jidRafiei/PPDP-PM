@@ -146,6 +146,8 @@ TLKC_FILE = ''
 TLKC_EXT_APPLIED = False
 TLKC_EXT_FILE = ''
 
+ALLOWED_HOSTS=['*',]
+
 #for uploading large files > 2.5 Mb
 # FILE_UPLOAD_HANDLERS = [
 #     'django.core.files.uploadhandler.TemporaryFileUploadHandler',

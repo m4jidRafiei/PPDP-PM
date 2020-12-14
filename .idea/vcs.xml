@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../PPDP-AnonOps" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../Social_Network" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../TLKC-Privacy" vcs="Git" />
